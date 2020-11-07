@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.instructorsContainer{
+    height: 445px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0f0f0f;
+}
+
+.instructorsHeaderContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.instructorsHeader{
+    color: #1AC7FD;
+    text-transform: uppercase;
+    word-spacing: 0.3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.separator{
+    content: '';
+    height: 2px;
+    width: 80%;
+    background-image: linear-gradient(to right, #EDE638, #7376BC,  #ED2323);
+    border-radius: 1px;
+}
+
+ .profileImage {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: 15% 15%;
+}
+
+.profileContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instructorName{
+    color: #f6f6f6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    height: 30px;
+    margin: 20px;
+}
+
+.profileInstuctor :hover{
+    /* 
+    Highlight name 
+    */
+}
+
