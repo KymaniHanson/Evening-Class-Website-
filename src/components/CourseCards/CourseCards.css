@@ -1,12 +1,18 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.courseCardsSecion{
-height: 450px;
-width: 100vw;
-display: flex;
-justify-content: space-around;
-padding: 50px;  
+
+.courseCardsSecion {
+  height: auto;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
 }
+/*# sourceMappingURL=CourseCards.css.map */

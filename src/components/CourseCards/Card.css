@@ -1,0 +1,306 @@
+/*
+Variables
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pobCardContainer {
+  margin: 20px;
+  height: 512px;
+  width: 435px;
+  background-color: #e4e4e4;
+  border-radius: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-property: -webkit-transform box-shadow;
+  transition-property: -webkit-transform box-shadow;
+  transition-property: transform box-shadow;
+  transition-property: transform box-shadow, -webkit-transform box-shadow;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.tagNum {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 50% 80%, 0 100%, 0 0);
+          clip-path: polygon(100% 0%, 100% 100%, 50% 80%, 0 100%, 0 0);
+  background: rgba(31, 31, 31, 0.75);
+  line-height: 50px;
+  height: 50px;
+  width: 35px;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  color: #f6f6f6;
+  text-align: center;
+}
+
+.courseCover {
+  border-radius: 19px 19px 0px 0px;
+  width: 100%;
+  height: 290px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-property: -webkit-transform border-radius box-shadow;
+  transition-property: -webkit-transform border-radius box-shadow;
+  transition-property: transform border-radius box-shadow;
+  transition-property: transform border-radius box-shadow, -webkit-transform border-radius box-shadow;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.coverTitle {
+  /* P */
+  position: absolute;
+  top: 102px;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 41px;
+  line-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #F6F6F6;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+}
+
+.bottomVectorRight {
+  position: absolute;
+  background: #FF9900;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  border-radius: 0px 0px 19px 19px;
+  -webkit-clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.recomendedText {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  left: 15px;
+  bottom: 15px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f6f6f6;
+  width: 180px;
+}
+
+.cxcLogo {
+  position: absolute;
+  height: 35px;
+  width: 43px;
+  right: 19.75px;
+  bottom: 10px;
+}
+
+.bottomVectorLeft {
+  position: absolute;
+  background: rgba(255, 153, 0, 0.35);
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  border-radius: 0px 0px 19px 19px;
+  -webkit-clip-path: polygon(0 0, 100% 40%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 40%, 100% 100%, 0% 100%);
+}
+
+.leanMoreButton {
+  height: 60px;
+  width: 150px;
+  outline-style: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #2a98c4;
+  border-style: none;
+  font-family: "Roboto", sans-serif;
+  color: #f6f6f6;
+  text-transform: uppercase;
+  display: none;
+  position: absolute;
+  top: 232px;
+}
+
+.leanMoreButton:hover {
+  background-color: #008dc3;
+  -webkit-box-shadow: 0px 3px 7px 2px #1f1f1f15, -3px 5px 7px 3px rgba(42, 152, 196, 0.295);
+          box-shadow: 0px 3px 7px 2px #1f1f1f15, -3px 5px 7px 3px rgba(42, 152, 196, 0.295);
+  border-style: none;
+  color: #f6f6f6;
+}
+
+.priceTag {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 132px;
+  height: 132px;
+  left: 0px;
+  background: #1F1F1F;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, calc(290px - 50%));
+          transform: translate(-50%, calc(290px - 50%));
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  color: #f6f6f6;
+  text-transform: uppercase;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+}
+
+.price-currency {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.courseFeatures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: absolute;
+  top: 310px;
+  left: 86px;
+  width: auto;
+  height: 25%;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px 50px 20px 0px;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19.628px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.featureIcon {
+  width: 22px;
+  height: 22px;
+  margin-right: 15px;
+}
+
+.classInstructor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 159.5px;
+}
+
+.professorPhoto {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: none;
+  opacity: 0;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.instructorName {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: 12px;
+  color: #1F1F1F;
+  display: none;
+  opacity: 0;
+  -webkit-transition-duration: 10000ms;
+          transition-duration: 10000ms;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.instructorName::before {
+  content: ' | ';
+}
+/*# sourceMappingURL=Card.css.map */
