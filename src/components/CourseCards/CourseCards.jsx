@@ -8,25 +8,30 @@ import courseContent from './courseData.jsx';
 function CourseCards(){
 
  return(
-     <div className="courseCardsSecion">
-        {
-            courseContent.map( (item) => (
-                <POBCard 
-                key={item.id}
-                id={ item.id } 
-                coverImagePath= { item.imagePath } 
-                coverTitle= { item.coverTitle } 
-                price = { item.price }
-                currency = { item.currency }
-                features = {item.features}
-                className="courseCard"
-                examLogoPath = { item.examLogoPath}
-                recomendedStatus = { item.recommendedStatus }
-                />
-            )
-            )
-        }
-     </div>
+     <section className="courseCardsSecion">
+
+         <span id="topCourses">Our Courses</span>
+
+        <div id="cardLayout">
+            {
+                courseContent.map( (item) => (
+                    <POBCard 
+                    id="courseCard"
+                    key={item.id}
+                    tagNum={ item.id } 
+                    coverImagePath= { item.imagePath } 
+                    coverTitle= { item.coverTitle } 
+                    price = { item.price }
+                    currency = { item.currency }
+                    features = {item.features}
+                    examLogoPath = { item.examLogoPath}
+                    recomendedStatus = { item.recommendedStatus }
+                    />
+                )
+                )
+            }
+        </div>
+     </section>
  );
 }
 

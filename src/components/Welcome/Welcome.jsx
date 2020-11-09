@@ -4,8 +4,10 @@ import './welcome.css';
 
 function Welcome() {
 
+const videoPath = "https://static.videezy.com/system/resources/previews/000/005/011/original/Firey_Nebula_4K_Motion_Background.mp4";
+
     //const videoSource = "../../../public/assets/production ID_5198161.mp4";
-    const videoSource1 = "https://static.videezy.com/system/resources/previews/000/004/649/original/Call_Out_Text_-_Ratings_Sliders.mp4";
+    const videoSource1 = videoPath;
   return (
    <section className="welcomeSection">
       <div className="welcomeContainer">
@@ -25,7 +27,7 @@ function Welcome() {
             </div>
             <div className="registerSeatContainer">
                 <span className="regisTerSeatLabel">Register for your spot today</span>
-                <button className="reserveSeatButton">Reserve Seat</button>
+                <button id="reserveSeatButton">Reserve Seat</button>
             </div>
         </div>
       </div>

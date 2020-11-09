@@ -5,7 +5,7 @@ import useHover from '../Hooks';
 
 import './Card.css';
 
-function POBCard({id, coverImagePath, coverTitle, price, currency, features, recomendedStatus, examLogoPath}){
+function POBCard({tagNum, coverImagePath, coverTitle, price, currency, features, recomendedStatus, examLogoPath}){
 
     const [hoverRef, isHovered] = useHover();
 
@@ -55,7 +55,7 @@ return(
     <div ref={hoverRef} style={containerStyle} className="pobCardContainer">
        <img src={ coverImagePath } alt="" style={coverImageStyle} className="courseCover"/>
         <span style={coverImageTitle} className="coverTitle">{ coverTitle }</span>
-        <div className="tagNum">{ id }</div>
+        <div className="tagNum">{ tagNum }</div>
         <div style={priceTagStyle} className="priceTag">
         <p className="price">{ price }</p>
             <p className="price-currency">{ currency }</p>

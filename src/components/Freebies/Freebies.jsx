@@ -17,7 +17,7 @@ return(
                     <p className="quoteHeader2">Learn from an exceptional teacher. He goes the extra mile for each student... 
                     No one is left behind!”</p>
                 </div>
-                <button className="getStartedButton">Get Started</button>
+                <button id="getStartedButton">Get Started</button>
         </div>
        </div>
    </section>

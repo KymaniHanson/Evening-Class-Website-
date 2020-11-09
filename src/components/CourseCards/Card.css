@@ -154,6 +154,7 @@ Variables
   display: none;
   position: absolute;
   top: 232px;
+  cursor: pointer;
 }
 
 .leanMoreButton:hover {

@@ -7,7 +7,7 @@
   .navbar {
     background-color: #1f1f1f;
     height: 90px;
-    width: 100vw;
+    width: 100%;
     padding: 25px;
     display: flex;
     align-items: center;

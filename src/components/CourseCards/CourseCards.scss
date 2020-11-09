@@ -5,8 +5,31 @@ box-sizing: border-box;
 }
 .courseCardsSecion{
 height: auto;
-width: 100vw;
+width: 100%;
 display: flex;
-justify-content: space-around;
-padding: 50px;  
+flex-direction: column;
+justify-content: center;
+}
+
+#topCourses{
+    text-align: center;
+    display: block;
+    line-height: 100px;
+    font-family: 'Roboto', san-serif; 
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-top: 80px;
+}
+
+
+#courseCard{
+    padding: 50px;
+    margin-right: 3px; 
+}
+
+#cardLayout{
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: row;   
+    margin: 40px;
 }
