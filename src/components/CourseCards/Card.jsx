@@ -62,7 +62,7 @@ return(
         </div>
         <div className="classInstructor">
             <img src={tempProfileImg} alt='' style={classInstructorStyle} className="professorPhoto"/>
-            <span style={classInstructorStyle} className="instructorName">Rafike Miller</span>
+            <span style={classInstructorStyle} className="classInstructorName">Rafike Miller</span>
         </div>
         <button style={learnMoreStyle} className="leanMoreButton">Learn More</button>
         <div className="courseFeatures">

@@ -4,7 +4,8 @@ import './ClassDetails.css';
 
 function ClassDetails() {
 return(
-    <table>
+    <section className="courseDetailsContainer">
+        <table>
         <tr>
             <td className="classDetails">
                 <p>
@@ -26,6 +27,7 @@ return(
             </td>
         </tr>
     </table>
+    </section>
 
 )
 }

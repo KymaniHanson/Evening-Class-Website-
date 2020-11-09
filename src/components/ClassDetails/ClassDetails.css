@@ -4,10 +4,19 @@ margin: 0;
 box-sizing: border-box;
 }
 
+.courseDetailsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 800px;
+}
+
 .classDetails{
 padding: 45px;
 font-family: 'Roboto', sans-serif;
-line-height: 1.5rem;
-font-size: normal;
+line-height: 35px;
+font-size: 23px;
 word-spacing: 0.2rem;
+
 }
