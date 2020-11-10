@@ -19,13 +19,16 @@
 
 
   /* change img to class name */
-  img {
+  #logoImage {
     height: 30px;
     width: 30px;
   }
   
   .logoSec {
     width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .hamburger{
@@ -37,28 +40,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30%;
   }
 
   .navMenu{
     position: absolute;
     right: 90px;
-  }
-  
-  li {
-    display: inline;
-  }
-  
-  li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
     text-decoration: none;
+  }
+
+  
+  .navMenu li {
+  
     color: #f6f6f6;
-    font-weight: 500;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
+    list-style: none;
   }
   
+
+
+
+
   @media only screen and (max-width: 1024px) {
     body {
       overflow: hidden;
