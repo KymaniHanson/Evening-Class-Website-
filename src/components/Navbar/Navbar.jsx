@@ -20,19 +20,19 @@ function Navbar() {
         <div className="menuSec">
           <ul className="navMenu">
             <Link to='/' style={navLinkStyle}>
-              <li> Home </li>
+              <li className="navItem"> Home </li>
             </Link>
 
             <Link to='/courses' style={navLinkStyle}>
-              <li> Courses </li>
+              <li className="navItem"> Courses </li>
             </Link>
 
             <Link to='/about' style={navLinkStyle}>
-              <li> About </li>
+              <li className="navItem"> About </li>
             </Link>
             
             <Link to='/contact' style={navLinkStyle}>
-              <li> Contact </li>
+              <li className="navItem"> Contact </li>
             </Link>
           </ul>
         </div>

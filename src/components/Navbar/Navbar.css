@@ -7,7 +7,7 @@
 
 .navbar {
   background-color: #1f1f1f;
-  height: 90px;
+  height: 70px;
   width: 100%;
   padding: 25px;
   display: -webkit-box;
@@ -82,13 +82,17 @@
 }
 
 .navMenu li {
-  color: #f6f6f6;
+  color: #c5c5c5;
   padding: 20px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   list-style: none;
+}
+
+.navMenu :hover li {
+  color: #ffffff;
 }
 
 @media only screen and (max-width: 1024px) {
