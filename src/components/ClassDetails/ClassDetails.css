@@ -1,22 +1,29 @@
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.courseDetailsContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 800px;
+.courseDetailsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 800px;
 }
 
-.classDetails{
-padding: 45px;
-font-family: 'Roboto', sans-serif;
-line-height: 35px;
-font-size: 23px;
-word-spacing: 0.2rem;
-
+.classDetails {
+  padding: 45px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 35px;
+  font-size: 23px;
+  word-spacing: 0.2rem;
 }
+/*# sourceMappingURL=ClassDetails.css.map */

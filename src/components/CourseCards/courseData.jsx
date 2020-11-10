@@ -1,9 +1,12 @@
 
+//const pobCoverSvg = 'POB_Cover.svg';
+const pobCoverJpg = 'assets/PobCover.jpg';
+
 const courseContent = [
     {
         id: 1, 
         coverTitle: "Principles of Business", 
-        imagePath: process.env.PUBLIC_URL + "assets/POB_Cover.svg", 
+        imagePath: process.env.PUBLIC_URL + "assets/PobCover.jpg", 
         features: [
             {
             iconPath: process.env.PUBLIC_URL + "assets/book_icon.svg", 

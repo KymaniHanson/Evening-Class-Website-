@@ -1,118 +1,131 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+.navbar {
+  background-color: #1f1f1f;
+  height: 90px;
+  width: 100%;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+/* change img to class name */
+img {
+  height: 30px;
+  width: 30px;
+}
+
+.logoSec {
+  width: 50px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menuSec {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navMenu {
+  position: absolute;
+  right: 90px;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: #f6f6f6;
+  font-weight: 500;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
   .navbar {
-    background-color: #1f1f1f;
-    height: 90px;
-    width: 100%;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-  }
-
-
-  /* change img to class name */
-  img {
-    height: 30px;
-    width: 30px;
-  }
-  
-  .logoSec {
-    width: 50px;
-  }
-  
-  .hamburger{
-    display: none;
-  }
-
-  .menuSec{
+    background-color: #ee0e0e;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-
-  .navMenu{
+  .navMenu {
+    background-color: #4ff0fe;
     position: absolute;
-    right: 90px;
+    top: 50px;
+    right: 0;
+    height: calc(100vh - 50px);
+    width: 40vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  
+  .hamburger {
+    height: 3px;
+    width: 25px;
+    border-radius: 1.5px;
+    background-color: #f6f6f6;
+    display: block;
+  }
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 1.5px;
+    background-color: #f6f6f6;
+  }
+  .hamburger::before {
+    -webkit-transform: translateY(-7px);
+            transform: translateY(-7px);
+  }
+  .hamburger::after {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
   li {
-    display: inline;
+    display: block;
+    margin: 20px;
   }
-  
-  li a {
-    text-decoration: none;
-    color: #f6f6f6;
-    font-weight: 500;
-    padding: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
+  .navMenu {
+    /* Use this to control the side bar: 40vw to 0vw*/
+    -webkit-transform: translateX(30vw);
+            transform: translateX(30vw);
   }
-  
-  @media only screen and (max-width: 1024px) {
-    body {
-      overflow: hidden;
-    }
-  
-    .navbar {
-      background-color: #ee0e0e;
-      position: relative;
-    }
-  
-    .navMenu {
-      background-color: #4ff0fe;
-      position: absolute;
-      top: 50px;
-      right: 0;
-      height: calc(100vh - 50px);
-      width: 40vw;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .hamburger {
-      height: 3px;
-      width: 25px;
-      border-radius: 1.5px;
-      background-color: #f6f6f6;
-      display: block;
-    }
-    
-    .hamburger::before,
-    .hamburger::after{
-      content: '';
-      display: block;
-      height: 3px;
-      width: 25px;
-      border-radius: 1.5px;
-      background-color: #f6f6f6;
-    }
-  
-    .hamburger::before{
-      transform: translateY(-7px)
-    }
-    
-    .hamburger::after{
-      transform: translateY(4px)
-    }
-    li {
-      display: block;
-      margin: 20px;
-    }
-  
-  .navMenu{ /* Use this to control the side bar: 40vw to 0vw*/
-    transform: translateX(30vw); 
-  }
-  
-  }
-  
+}
+/*# sourceMappingURL=Navbar.css.map */
