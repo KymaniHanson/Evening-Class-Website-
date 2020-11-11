@@ -4,3 +4,4 @@
     export {default as ClassDetails} from './ClassDetails/ClassDetails.jsx';
     export {default as Instructors} from './Instructors/Instructors.jsx';
     export {default as CourseCards} from './CourseCards/CourseCards.jsx';
+    export {default as Footer} from './Footer/Footer.jsx'

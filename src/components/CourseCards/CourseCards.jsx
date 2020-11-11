@@ -16,8 +16,8 @@ function CourseCards(){
             {
                 courseContent.map( (item) => (
                     <POBCard 
-                    id="courseCard"
                     key={item.id}
+                    id="courseCard"
                     tagNum={ item.id } 
                     coverImagePath= { item.imagePath } 
                     coverTitle= { item.coverTitle } 

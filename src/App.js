@@ -2,7 +2,7 @@ import React from 'react';
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
-import {Navbar} from './components';
+import {Navbar, Footer} from './components';
 
 import Home from './pages/Home.jsx';
 import Contact from './pages/Contact.jsx';
@@ -21,6 +21,7 @@ class App extends React.Component {
                         <Route path='/about' component={About}/>
                         <Route path='/courses' component={Courses}/>
                     </Switch>
+                    <Footer/>
                 </div>
             </Router>
         )

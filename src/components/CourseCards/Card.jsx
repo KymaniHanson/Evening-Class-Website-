@@ -68,9 +68,9 @@ return(
         <div className="courseFeatures">
                 {
                     features.map(item => (
-                        <div key={item.id} className="feature">
-                            <img  src={item.iconPath} alt="" className="featureIcon"/>
-                            <span className="featureLabel">{ item.label }</span>
+                        <div className="feature">
+                            <img  key={item.id} src={item.iconPath} alt="" className="featureIcon"/>
+                            <span key={item.id} className="featureLabel">{ item.label }</span>
                         </div>
                     ))
                 } 

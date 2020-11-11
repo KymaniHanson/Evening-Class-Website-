@@ -93,6 +93,7 @@
 
 .navMenu :hover li {
   color: #ffffff;
+  border-bottom: 3px solid #ffffff;
 }
 
 @media only screen and (max-width: 1024px) {

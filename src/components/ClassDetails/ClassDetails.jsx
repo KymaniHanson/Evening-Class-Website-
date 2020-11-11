@@ -6,6 +6,7 @@ function ClassDetails() {
 return(
     <section className="courseDetailsContainer">
         <table>
+        <tbody>
         <tr>
             <td className="classDetails">
                 <p>
@@ -26,6 +27,7 @@ return(
                 </p>
             </td>
         </tr>
+        </tbody>
     </table>
     </section>
 
