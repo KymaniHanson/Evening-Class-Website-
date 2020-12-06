@@ -16,13 +16,13 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  height: 650px;
+  height: 580px;
 }
 
 .welcomeContainer {
   position: absolute;
-  top: 70px;
-  height: 580px;
+  top: 0;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

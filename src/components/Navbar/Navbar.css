@@ -107,10 +107,10 @@
   .navMenu {
     background-color: #4ff0fe;
     position: absolute;
-    top: 50px;
+    top: 35px;
     right: 0;
     height: calc(100vh - 50px);
-    width: 40vw;
+    width: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -149,8 +149,16 @@
   }
   .navMenu {
     /* Use this to control the side bar: 40vw to 0vw*/
-    -webkit-transform: translateX(30vw);
-            transform: translateX(30vw);
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+    -webkit-transition: -webkit-transform 300ms ease-in;
+    transition: -webkit-transform 300ms ease-in;
+    transition: transform 300ms ease-in;
+    transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+  }
+  .navMenu-active {
+    -webkit-transform: translate(300px);
+            transform: translate(300px);
   }
 }
 /*# sourceMappingURL=Navbar.css.map */

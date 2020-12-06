@@ -85,10 +85,10 @@
     .navMenu {
       background-color: #4ff0fe;
       position: absolute;
-      top: 50px;
+      top: 35px;
       right: 0;
       height: calc(100vh - 50px);
-      width: 40vw;
+      width: 300px;
       display: flex;
       flex-direction: column;
     }
@@ -123,8 +123,14 @@
       margin: 20px;
     }
   
-  .navMenu{ /* Use this to control the side bar: 40vw to 0vw*/
-    transform: translateX(30vw); 
+  .navMenu{ 
+    /* Use this to control the side bar: 40vw to 0vw*/
+    transform: translateX(600px); 
+    transition: transform 300ms ease-in;
+  }
+
+  .navMenu-active{
+    transform: translate(300px);
   }
   
   }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useRef} from "react";
 
 import { Link } from 'react-router-dom';
 
@@ -10,6 +10,20 @@ function Navbar() {
     textDecoration: 'none'
   }
 
+  const [navOpen, setNavState] = useState(false);
+
+  const ref = useRef();
+
+  const foo = () => {
+    if (!navOpen) {
+      ref.current.classList.toggle("navMenu-active");
+      setNavState(navOpen);
+    } else {
+      setNavState(!navOpen);
+    }
+    console.log(ref.current);
+  };
+
   const logoPath = "https://www.flaticon.com/svg/static/icons/svg/3706/3706707.svg";
 
     return (
@@ -18,7 +32,7 @@ function Navbar() {
           <img src={logoPath} alt="Logo" id="logoImage"/>
         </div>
         <div className="menuSec">
-          <ul className="navMenu">
+          <ul ref={ref} className="navMenu">
             <Link to='/' style={navLinkStyle}>
               <li className="navItem"> Home </li>
             </Link>
@@ -36,7 +50,7 @@ function Navbar() {
             </Link>
           </ul>
         </div>
-          <div className="hamburger"> </div>
+          <div className="hamburger" onClick={foo}> </div>
       </nav>
     );
   }
